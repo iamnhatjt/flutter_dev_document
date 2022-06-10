@@ -1,6 +1,9 @@
+import 'package:app_new/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
-void main() {}
+void main() {
+  runApp(const App());
+}
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -9,12 +12,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'goodmon',
-      home: Scaffold(
-        backgroundColor: Colors.red[400],
-        appBar: AppBar(
-          title: const Text('this is title'),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
